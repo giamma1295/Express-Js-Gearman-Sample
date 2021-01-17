@@ -1,0 +1,22 @@
+{
+  "name": "node_test_prj",
+  "version": "1.0.0",
+  "description": "Example express.js, geraman, jwt.... application",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "devStart": "nodemon src/server.js"
+  },
+  "author": "Gianmaria Scorza",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
