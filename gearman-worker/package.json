@@ -1,0 +1,14 @@
+{
+  "name": "gearman-worker",
+  "version": "1.0.0",
+  "description": "Gearman Worker Sample",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gianmaria Scorza",
+  "license": "ISC",
+  "dependencies": {
+    "gearman": "^2.1.0"
+  }
+}
