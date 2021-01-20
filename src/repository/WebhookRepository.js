@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+//Here we shold be called the db in order to execute CRUD operation on real stored data
+//For this example we will use a json file stored locally
+
 function getWebhookByUsername(username){
     const filename = getFilename(username)
 
