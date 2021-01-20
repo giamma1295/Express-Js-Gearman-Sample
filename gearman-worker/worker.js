@@ -4,11 +4,11 @@ let worker = gearman()
 
 // handle jobs assigned by the server
 worker.on('JOB_ASSIGN', function(job) {
-    console.log(job.func_name + ' job assigned to this worker')
-    // create a buffer
-    const buff = Buffer.from(job.payload.toString(), 'utf-8');
+    console.log('Received job =>' + job.func_name)
+
     // decode buffer as Base64
-    const result = buff.toString('base64');
+    const result = job.payload.toString('base64');
+
     // notify the server the job is done
     worker.sendWorkComplete(job.handle, result)
 
