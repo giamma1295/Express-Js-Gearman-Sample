@@ -25,7 +25,6 @@ function encode(req, res) {
         return ResponseUtility.sendErrorResponse(res, err)
     }
 
-    //Request encode to gearman worker(execute Async)
     return ResponseUtility.sendSuccessResponse(res, 'Request accepted, webhook will be called providing the process result',202)
 
 }

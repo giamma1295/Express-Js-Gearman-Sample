@@ -17,7 +17,7 @@ function setUrl(req, res) {
     //Fetch webhook url from repository for this user
     WebhookService.setWebhookUrl(req.tokenData.username, req.body.webhookUrl)
 
-    return ResponseUtility.sendSuccessResponse(res)
+    return ResponseUtility.sendSuccessResponse(res, 'WebhookUrl successfully set')
 
 }
 
